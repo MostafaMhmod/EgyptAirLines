@@ -1,0 +1,70 @@
+<!-- background: rgba(160, 36, 39, 0.7); -->
+<head>
+  <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+  <div id="confirm" ng-controller="confirmController">
+  <h2> Confrim your ticket reservation. </h2>
+  <div id="flight-details">
+    <p> Flight Details:- </p>
+    <br>
+    <div style="display: inline;">
+      <ul>
+        <li> From {{originid}} To {{destinationid}} </li>
+        <li> Departure time {{departuredate}} Arrival time {{arrivaldate}} </li>
+        <br>
+      </ul>
+    </div>
+  </div>
+  <div style="margin-left: 15%;">
+    <div id="col12"  class="roundcont" style="height: 405px; background-color: rgba(233, 221, 201, 0.7);">
+      <p style="color: navy;"> Personal Details:- </p>
+      <div style="display: inline;">
+        <ul>
+          <li>
+            <form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+              <p style="margin-bottom: -29; color: navy;">First Name:</p>   <br><input type="text" name="firstname" > </input><br>
+            </form>
+          </li>
+          <li>
+            <form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+              <p style="margin-bottom: -29; color: navy;">Last Name:</p>    <br><input type="text" name="lastname" required> </input><br>
+            </form>
+          </li>
+          <li>
+            <form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+              <p style="margin-bottom: -29; color: navy;">Passport ID:</p>  <br><input type="text" name="passportid" required> </input><br>
+            </form>
+          </li>
+          <li>
+            <form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+              <p style="margin-bottom: -29; color: navy;">Issue Date:</p>   <br><input type="text" name="issuedate" required> </input><br>
+            </form>
+          </li>
+          <li>
+            <form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+              <p style="margin-bottom: -29; color: navy;">Expiry Date:</p>  <br><input type="text" name="expirydate" required> </input><br>
+            </form>
+          </li>
+          <li>
+            <a href="javascript:void(0)" style="color: navy;" onclick = "document.getElementById('payment').style.display='block';document.getElementById('fade').style.display='block'"><button type="button" name="next">Next</button></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id=payment class="payment">
+      <div id="col11" class="roundcont" style="z-index: 1; background-color: rgba(233, 221, 201, 0.7);">
+        <p style="color: navy;"> Payment Details:- </p>
+        Payment Method:
+        <br>
+        <input type="radio" name="gender" value="visa">
+        <img src="../images/mc.png" style="margin-right: 20px; border-radius: 5px 5px 5px 5px;">
+        <input type="radio" name="gender" value="mastercard">
+        <img src="../images/visa.png" style="margin-right: 20px;  border-radius: 5px 5px 5px 5px;">
+        <br><br>
+        <button style="color: navy;">Confirm</button>
+        <br>
+      </div>
+    </div>
+  </div>
+</body>

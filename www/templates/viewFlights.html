@@ -1,0 +1,119 @@
+<ion-view view-title="viewflights">
+	<ion-content>
+<body ng-controller="flightsController">
+
+<div id="viewflights"  style="text-align: center;
+      color: navy;
+      margin-top: 20px;
+      background: rgba(233, 221, 201, 0.7);
+      padding: 50px 50px 50px 50px;
+      width: 100%;
+      position :relative;
+      border-radius: 50px">
+
+	<h1 > View Flights </h1>
+
+	<div>
+                <div class="line"><label for="surname">Select Class: </label>
+						<select id="classticket" ng-model="classticket">
+							<option value="Economy">Economy</option>
+ 							<option value="Business">Business</option>
+						</select>
+				</div>
+				<br>
+                <div class="line">
+						<label for="from">From: </label>
+						<select id="origins" ng-model="origins">
+							<option value="CAI">Cairo</option>
+							<option value="BER">Berlin</option>
+							<option value="MUM">Mumbai</option>
+							<option value="LAX">Los Angeles</option>
+							<option value="MIL">Milan</option>
+							<option value="DEL">Delhi</option>
+							<option value="HOK">Hong Kong</option>
+							<option value="TAI">Taiwan</option>
+							<option value="JOH">Johannesburg</option>
+							<option value="CPT">Cape Town</option>
+							<option value="RIY">Riyadh</option>
+							<option value="JFK">New York</option>
+							<option value="LAV">Las Vegas</option>
+							<option value="LAX">Los Angeles</option>
+							<option value="SAF">San Francisco</option>
+							<option value="FRK">Frankfurt</option>
+							<option value="ROM">Rome</option>
+							<option value="JED">Jeddah</option>
+						</select>
+						<label for="to">To: </label>
+						<select id="destinations" ng-model="destinations">
+							<option value="CAI">Cairo</option>
+							<option value="BER">Berlin</option>
+							<option value="MUM">Mumbai</option>
+							<option value="LAX">Los Angeles</option>
+							<option value="MIL">Milan</option>
+							<option value="DEL">Delhi</option>
+							<option value="HOK">Hong Kong</option>
+							<option value="TAI">Taiwan</option>
+							<option value="JOH">Johannesburg</option>
+							<option value="CPT">Cape Town</option>
+							<option value="RIY">Riyadh</option>
+							<option value="JFK">New York</option>
+							<option value="LAV">Las Vegas</option>
+							<option value="LAX">Los Angeles</option>
+							<option value="SAF">San Francisco</option>
+							<option value="FRK">Frankfurt</option>
+							<option value="ROM">Rome</option>
+							<option value="JED">Jeddah</option>
+						</select>
+				</div>
+
+				<br>
+
+
+				<div>
+					Rounded Trip: <input type="checkbox" ng-model="checked" aria-label="Toggle ngHide">
+				</div>
+
+				<br>
+
+				<div>
+
+					<div class="Date_of_departure" style="display: inline; ">
+                		Departure date:
+						<input id="departingdate" ng-model="departingdate" style="width: 100px" />
+					</div>
+
+
+					<div class="Date_of_Arrival" ng-show="checked" style="display: inline; margin-left: 250px; ">
+						Arrival date:
+						<input id="returningDate" ng-model="returningDate" style="width: 100px" />
+					</div>
+
+				</div>
+
+				<br>
+
+                <div class="line submit">
+                	<a href=""><input type="submit" ng-click='submit()' value="Search" style="margin-left: 750px; color: black" /></a>
+                </div>
+
+
+    </div>
+    <div class="roundcont" style="">
+	<ul class="flightlist">
+		<li class="flight cf" ng-repeat="x in flights">
+			<div><img src="../images/p.png"></img></div>
+			Flight number: <div class="inside" style="margin-left: 40%;">{{x._id}}</div>
+			<div class="inside" style="margin-left: 40%;">{{x.originid}} - {{x.destinationid}}</div>
+			Time :<div style="margin-left: 40%;">{{x.departuredate}} - {{x.arrivaldate}}
+			<a href="#confirm"><input type="button" name="book" value="Book"  style="margin-left: 40%;"></a></div>
+		</li>
+		
+	</ul>
+	</div>
+
+
+
+</div>
+</body>
+	</ion-content>
+</ion-view>

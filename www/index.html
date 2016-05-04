@@ -1,0 +1,61 @@
+<html>
+<title>Egypt Airlines Home Page</title>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>Egypt Airlines Home Page</title>
+
+        <!-- load css -->
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+
+    <!-- ANGULAR SCRIPTS -->
+
+  <script src="lib/ionic/js/angular/angular.js"></script>
+  <script src="lib/ionic/js/angular/angular-route.js"></script>
+  <script src="lib/ionic/js/angular/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <script type="js/mainService.js"></script>
+
+  <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+  
+
+</head>
+
+<script type="text/javascript">
+$('.button').click(function () {
+  $('.overlay').show();
+})
+$('.close').click(function () {
+  $('.overlay').hide();
+})
+</script>
+
+
+
+
+<body ng-app="myApp">
+  <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-nav-view>
+    </ion-nav-view>
+
+
+</body>
+</html>

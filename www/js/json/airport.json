@@ -1,0 +1,200 @@
+[
+{
+        "_id": "100",
+        "name": "Mumbai Airport",
+        "status": 1,
+        "country": "India",
+        "continent": "Asia",
+        "lon": "215.86667",
+        "lat": "180.233333",
+        "type": "airport",
+        "size": "large"
+},
+{
+        "_id": "101",
+        "name": "Delhi Airport",
+        "status": 1,
+        "country": "India",
+        "continent": "Asia",
+        "lon": "225.86667",
+        "lat": "110.233333",
+        "type": "airport",
+        "size": "medium"
+},
+{
+        "_id": "102",
+        "name": "Cairo Airport",
+        "status": 1,
+        "country": "Egypt",
+        "continent": "Africa",
+        "lon": "115.86667",
+        "lat": "160.233333",
+        "type": "airport",
+        "size": "medium"
+},
+{
+        "_id": "103",
+        "name": "Jeddah Airport",
+        "status": 1,
+        "country": "KSA",
+        "continent": "Asia",
+        "lon": "145.86667",
+        "lat": "230.233333",
+        "type": "airport",
+        "size": "small"
+},
+{
+        "_id": "104",
+        "name": "Hong Kong Airport",
+        "status": 1,
+        "country": "Hong Kong",
+        "continent": "Asia",
+        "lon": "125.86667",
+        "lat": "180.233333",
+        "type": "airport",
+        "size": "large"
+},
+{
+        "_id": "105",
+        "name": "Taiwan Airport",
+        "status": 1,
+        "country": "Taiwan",
+        "continent": "Asia",
+        "lon": "205.86667",
+        "lat": "180.233333",
+        "type": "airport",
+        "size": "small"
+},
+{
+        "_id": "200",
+        "name": "Johannesburg Airport",
+        "status": 1,
+        "country": "South Africa",
+        "continent": "Africa",
+        "lon": "215.86667",
+        "lat": "105.233333",
+        "type": "airport",
+        "size": "large"
+},
+{
+        "_id": "201",
+        "name": "Cape Town Airport",
+        "status": 1,
+        "country": "South Africa",
+        "continent": "Africa",
+        "lon": "205.86667",
+        "lat": "110.233333",
+        "type": "airport",
+        "size": "small"
+},
+{
+        "_id": "120",
+        "name": "Riyadh Airport",
+        "status": 1,
+        "country": "KSA",
+        "continent": "Asia",
+        "lon": "215.86667",
+        "lat": "200.233333",
+        "type": "airport",
+        "size": "small"
+},
+{
+        "_id": "300",
+        "name": "Heathrow Airport",
+        "status": 1,
+        "country": "UK",
+        "continent": "Europe",
+        "lon": "200.86667",
+        "lat": "180.233333",
+        "type": "airport",
+        "size": "large"
+},
+{
+        "_id": "301",
+        "name": "JFK Airport",
+        "status": 1,
+        "country": "USA",
+        "continent": "North America",
+        "lon": "100.86667",
+        "lat": "200.233333",
+        "type": "airport",
+        "size": "large"
+},
+{
+        "_id": "302",
+        "name": "Las Vegas Airport",
+        "status": 1,
+        "country": "USA",
+        "continent": "North America",
+        "lon": "105.86667",
+        "lat": "150.233333",
+        "type": "airport",
+        "size": "medium"
+},
+{
+        "_id": "303",
+        "name": "Los Angeles Airport",
+        "status": 1,
+        "country": "USA",
+        "continent": "North America",
+        "lon": "155.86667",
+        "lat": "283.233333",
+        "type": "airport",
+        "size": "large"
+},
+{
+        "_id": "304",
+        "name": "San Francisco Airport",
+        "status": 1,
+        "country": "USA",
+        "continent": "North America",
+        "lon": "160.86667",
+        "lat": "180.233333",
+        "type": "airport",
+        "size": "small"
+},
+{
+        "_id": "305",
+        "name": "Frankfurt Airport",
+        "status": 1,
+        "country": "Germany",
+        "continent": "Europe",
+        "lon": "142.86667",
+        "lat": "201.233333",
+        "type": "airport",
+        "size": "large"
+},
+{
+        "_id": "306",
+        "name": "Berlin Airport",
+        "status": 1,
+        "country": "Germany",
+        "continent": "Europe",
+        "lon": "146.86667",
+        "lat": "200.233333",
+        "type": "airport",
+        "size": "small"
+},
+{
+        "_id": "307",
+        "name": "Rome Airport",
+        "status": 1,
+        "country": "Italy",
+        "continent": "Europe",
+        "lon": "221.86667",
+        "lat": "167.233333",
+        "type": "airport",
+        "size": "small"
+},
+{
+        "_id": "308",
+        "name": "Milan Airport",
+        "status": 1,
+        "country": "Italy",
+        "continent": "Europe",
+        "lon": "222.86667",
+        "lat": "164.233333",
+        "type": "airport",
+        "size": "small"
+}
+]
