@@ -1,5 +1,7 @@
 <ion-view view-title="Dashboard">
+
   <ion-content class="padding">
+    <section class="second">
     <div id="home" ng-controller="homeController" style="margin-left: 100px;">
     <div >
   <div id="light" class="white_content" style="height: 100%;">
@@ -17,7 +19,7 @@
   <div id="fade" class="black_overlay">
   </div>
 
-  <div id="col1" class = "sidebar" style="rgba(0, 0, 0, 1); background : rgba(233, 221, 201, 0.6); position: relative;">
+  <div id="col1" class = "sidebar" style="rgba(0, 0, 0, 1);  position: relative;">
 
     <div style="padding-top: 10px;">
       <ul style="background : rgba(233, 221, 201, 0.6); border-radius: 15px 15px 15px 15px;" >
@@ -27,11 +29,6 @@
         <li class="x"><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">Contact</a></li>
         <li class="x"><a href="#/">Partners</a></li>
       </ul>
-
-      <ul style="background : #E9DDC9; border-radius: 15px 15px 15px 15px;" >
-        <h1 style="color:navy; font-size:40;">follow us on: </h1>
-        <a href=""><img src="../img/fb.png"></a><a href=""><img src="../img/tw.png"></a>
-      </ul>
     </div>
 
   </div>
@@ -39,30 +36,10 @@
 
 
   
-  <div class="roundc" style="position: top; background: rgba(233, 221, 201, 0.6); height: 30%; width: 70%; left: 15%; float: left; clear: both;">
- <div class="roundc" style="width: 80%; height: 40%; left: 10%; top: 5%; ">
-   <div id="firstDivistion" class="division"><img src="../images/ss.jpg" style="border-radius: 25px 0 15px 15px;"></img></div>
-   <div id="secondDivistion" class="division">
-     <div style="margin-left: 29%;" ><h2 style="font-size:30; color: navy">Limited Offer</h2></div>
-     <div style="margin-left: 30%;" >25% off all tickets to Sharm el-Sheikh!</div>
-     <br>
-     <button type="button" name="learn more" style="margin-left: 40%;">Learn More</button>
-   </div>
- </div>
-   <div class="roundc" style="width: 80%; height: 40%; left: 10%; top: 10%;">
-     <div id="firstDivistion" class="division"><img src="../images/lol.jpg" style="border-radius: 25px 0 15px 15px;"></img></div>
-     <div id="secondDivistion" class="division">
-       <div style="margin-left: 29%;" ><h2 style="font-size:30; color: navy">Announcement</h2></div>
-       <br>
-       <div style="margin-left: 30%; margin-right: 2px;" >Flights to sweden postponed due to storm</div>
-       <br>
-     </div>
-   </div>
-</div>
-  </div>
 
 
 
 </div>
+    </section>
   </ion-content>
 </ion-view>
