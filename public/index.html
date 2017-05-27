@@ -1,0 +1,176 @@
+<html ng-app="myApp" >
+<title>Egypt Airlines Home Page</title>
+
+<head>
+
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+
+        <!-- load css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link href="http://www.egyptair.com/Style%20Library/LINKDev/Img/favicon.ico" rel="icon" type="image/x-icon" alt="EgyptAir Favourite Icon" />
+
+  <!-- ANGULAR SCRIPTS -->
+
+  <script src="libs/angular.js"></script>
+  <script src="libs/angular-route.js"></script>
+  <script src="libs/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="./libs/bootstrap.min.js"></script>
+</head>
+
+<script type="text/javascript">
+$('.button').click(function () {
+  $('.overlay').show();
+})
+$('.close').click(function () {
+  $('.overlay').hide();
+})
+</script>
+
+
+
+
+<body ng-controller="mainController">
+
+<section class="second">
+
+   <nav class="navbar navbar-default navbar-inverse" role="navigation" style="background-color:#908f8f; color:navy;" >
+<div>
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#/" Style="color: navy">Home</a></li>
+            <li><a href="#about"Style="color: navy">About Us</a></li>
+            <li class="dropdown">
+              <a href=""class="dropdown-toggle" data-toggle="dropdown" Style="color: navy">Services <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#flights">View Flights</a></li>
+                <li><a href="#trackflight">Track Flight</a></li>
+                <li class="divider"></li>
+                <li><a href="#boarding">Boarding</a></li>
+                <li class="divider"></li>
+                <li><a href="#/">Contact Us</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search" style="font-size: 1.6rem;">
+            </div>
+            <button type="submit" style="margin-right: 40;">Submit</button>
+            <div class="form-group"><img src="../images/mainLogo.png"></img></div>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="overflow: hidden;
+        overflow-x:hidden;
+        overflow-y: hidden;">
+      <ol class="carousel-indicators" style="overflow: hidden;">
+        <li data-target="#myCarousel" data-slide-to="0" class="active" data-interval="4000"></li>
+        <li data-target="#myCarousel" data-slide-to="1" data-interval="4000"></li>
+        <li data-target="#myCarousel" data-slide-to="2" data-interval="4000"></li>
+        <li data-target="#myCarousel" data-slide-to="3" data-interval="4000"  ></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox"style="overflow: hidden;
+      margin-left:auto;
+      margin-right:auto;
+      overflow-x:hidden;
+      overflow-y: hidden;">
+        <div class="item active">
+          <img src="./images/1.jpg" alt="Chania"style="height: 430px; width:100%;">
+          <div class="carousel-caption">
+            <h1>Egypt Air</h1>
+            <p class="text-top-image">Catered to your comfort</p>
+          </div>
+        </div>
+
+        <div class="item" style="overflow: hidden;">
+          <img src="./images/2.jpg" alt="Chania"style="height: 430px; width:100%;">
+          <div class="carousel-caption">
+            <h1>International and Local Travel</h1>
+            <p>Thousands of destinations, one click away</p>
+          </div>
+        </div>
+
+        <div class="item"style="overflow: hidden;">
+          <img src="./images/3.jpg" alt="Flower"style="height: 430px; width:100%;">
+          <div class="carousel-caption">
+            <h1>A member of the star alliance</h1>
+          </div>
+        </div>
+
+        <div class="item"style="overflow: hidden;">
+          <img src="./images/4.jpg" alt="Flower"style="height: 430px; width:100%;">
+          <div class="carousel-caption">
+            <h1>85 years of service</h1>
+          </div>
+        </div>
+      </div>
+
+
+   <!--    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a> -->
+  </div>
+
+
+
+  <!-- ANGULAR DYNAMIC CONTENT -->
+  <div id="mainBody" >
+          <div ng-view></div>
+  </div>
+
+  <br>
+  <br>
+  <div>
+
+  <footer class="site-footer"   >
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="footer-nav clearfix">
+                            <ul class="footer-menu">
+                                <li style="background-color: rgba(0, 157, 226, 0);"><a href="#/">Home</a></li>
+                                <li  style="background-color: rgba(0, 157, 226, 0);"> <a href="#/about">About Us</a></li>
+                                <li style="background-color: rgba(0, 157, 226, 0);"><a href="#/about">Contact us</a></li>
+                            </ul> <!-- /.footer-menu   -->
+                        </nav> <!-- /.footer-nav -->
+                    </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="col-md-12">
+                    <p class="copyright-text" style="color: black;">Copyright &copy; 2016 : Developed by Code worms Team</p>
+                </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+    </footer>
+    </div>
+         <!-- /.site-footer -->
+</section>
+</body>
+</html>

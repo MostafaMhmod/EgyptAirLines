@@ -11,7 +11,7 @@ exports.seed = function(callback) {
             });
 
             // Seeding airplane
-            fs.readFile('www/js/json/airplane.json', 'utf8', function(err, data) {
+            fs.readFile('public/js/json/airplane.json', 'utf8', function(err, data) {
                 if (err) throw err;
                 console.log("Data Retrieved from json");
 
@@ -19,7 +19,7 @@ exports.seed = function(callback) {
             });
 
             // Seeding airport
-            fs.readFile('www/js/json/airport.json', 'utf8', function(err, data) {
+            fs.readFile('public/js/json/airport.json', 'utf8', function(err, data) {
                 if (err) throw err;
                 console.log("Data Retrieved from json");
 
@@ -27,14 +27,14 @@ exports.seed = function(callback) {
             });
 
             // Seeding flights
-            fs.readFile('www/js/json/flight.json', 'utf8', function(err, data) {
+            fs.readFile('public/js/json/flight.json', 'utf8', function(err, data) {
                 if (err) throw err;
                 console.log("Data Retrieved from json");
 
                 db.seed('flights',JSON.parse(data));
             });
 
-            fs.readFile('www/js/json/booking.json', 'utf8', function(err, data) {
+            fs.readFile('public/js/json/booking.json', 'utf8', function(err, data) {
                 if (err) throw err;
                 console.log("Data Retrieved from json");
 
